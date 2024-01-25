@@ -24,8 +24,8 @@ def predictautoencoder():
         try:
             dato= leer_dato(file)
             prediccion= predecir(dato)
-            #data = obtener_categoria(prediccion)
-            data = {'prediction': prediccion.item(), 'class_name': str(prediccion.item())}
+            data = obtener_categoria(prediccion)
+            data = {'prediction': data, 'class_name': str(prediccion.item())}
             return (data)
         #return "funciona"
         except:
