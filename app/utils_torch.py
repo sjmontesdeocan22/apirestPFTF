@@ -4,7 +4,7 @@ import pickle
 MODEL_PATH='app/autoencoder_model_scripted_v1.pt'
 model = torch.jit.load(MODEL_PATH)
 model.eval()
-umbral=0.40
+umbral=0.06294515
 
 def leer_dato(uploaded_file):
     dato = pickle.loads(uploaded_file.getvalue())
